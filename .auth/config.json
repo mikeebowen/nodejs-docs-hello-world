@@ -1,0 +1,33 @@
+{
+  "platform": {
+    "enabled": true
+  },
+  "globalValidation": {
+    "requireAuthentication": true,
+    "unauthenticatedClientAction": "Return401",
+    "excludedPaths": [
+      "/"
+    ]
+  },
+  "identityProviders": {
+    "azureActiveDirectory": {
+      "enabled": true,
+      "registration": {
+        "clientIdSettingName": "MICROSOFT_PROVIDER_CLIENT_ID",
+        "clientSecretSettingName": "MICROSOFT_PROVIDER_AUTHENTICATION_SECRET",
+        "openIdIssuer": "https://login.microsoftonline.com/810bf15f-7f39-4997-a447-1a6b68f310e4/v2.0"
+      }
+    }
+  },
+  "login": {
+    "tokenStore": {
+      "enabled": true
+    }
+  },
+  "httpSettings": {
+    "requireHttps": true,
+    "routes": {
+      "apiPrefix": "/.auth"
+    }
+  }
+}
