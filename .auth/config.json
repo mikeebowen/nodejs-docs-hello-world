@@ -14,8 +14,7 @@
       "enabled": true,
       "registration": {
         "clientIdSettingName": "MICROSOFT_PROVIDER_CLIENT_ID",
-        "clientSecretSettingName": "MICROSOFT_PROVIDER_AUTHENTICATION_SECRET",
-        "openIdIssuer": "https://login.microsoftonline.com/common/v2.0"
+        "clientSecretSettingName": "MICROSOFT_PROVIDER_AUTHENTICATION_SECRET"
       }
     }
   },
