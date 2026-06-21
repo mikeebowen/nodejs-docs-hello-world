@@ -15,9 +15,7 @@
       "registration": {
         "clientIdSettingName": "MICROSOFT_PROVIDER_CLIENT_ID",
         "clientSecretSettingName": "MICROSOFT_PROVIDER_AUTHENTICATION_SECRET",
-         "openIdConnectConfiguration": {
-          "wellKnownOpenIdConfiguration": "https://microsoftonline.com"
-        }
+        "openIdIssuer": "https://login.microsoftonline.com/common/v2.0"
       }
     }
   },
